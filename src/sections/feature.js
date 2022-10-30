@@ -5,66 +5,66 @@ import SectionHeader from 'components/section-header';
 import FeatureCard from 'components/feature-card.js';
 import Performance from 'assets/feature/performance.svg';
 import Partnership from 'assets/feature/partnership.svg';
-import Subscription from 'assets/feature/subscription.svg';
 import Support from 'assets/feature/support.svg';
+import Subscription from 'assets/feature/subscription.svg';
 
 const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    altText: 'Fast Track',
+    title: 'Fast Track',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      'Skip The Queue',
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    altText: 'Media & Press',
+    title: 'Responsible Tourism',
     text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning navigated by keyboard and screen readers.',
+      'The Cableway focuses on the three pillars of responsible tourism – environmental, social and economic responsibility – to maximise benefits and minimise costs.',
   },
   {
     id: 3,
-    imgSrc: Subscription,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    imgSrc: Support,
+    altText: 'Work With Us',
+    title: 'Careers Portal',
     text:
-      ' Paid subscriptions allow us to continue helping learners around the world.',
+      'Every year, we offer short-term job opportunities in several departments to work during the summer months, our busiest period.',
   },
   {
     id: 4,
-    imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    imgSrc: Subscription,
+    altText: 'Sign Up To Our Newsletter',
+    title: 'Newsletter',
     text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
+      'Our purpose is to share our passion for Table Mountain by giving everyone an authentic experience of an iconic natural wonder.',
   },
 ];
 
 export default function Feature() {
   return (
-   <section sx={{variant: 'section.feature'}} >
-    <Container>
-      <SectionHeader 
-      slogan="Quality Features"
-      title="The Transition to Digital"
-      />
-      <Grid sx={styles.grid}>
-        {data.map((item) => (
-          <FeatureCard 
-          key={item.id}
-          src={item.imgSrc}
-          alt={item.altText}
-          title={item.title}
-          text={item.text}
-          />
-        ))}
-      </Grid>
-    </Container>
+    <section sx={{ variant: 'section.feature' }} >
+      <Container>
+        <SectionHeader
+          slogan=""
+          title=""
+        />
+        <Grid sx={styles.grid}>
+          {data.map((item) => (
+            <FeatureCard
+              key={item.id}
+              src={item.imgSrc}
+              alt={item.altText}
+              title={item.title}
+              text={item.text}
+            />
+          ))}
+        </Grid>
+      </Container>
 
-   </section>
+    </section>
   );
 }
 

@@ -10,14 +10,13 @@ export default function Banner() {
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
-          <Heading as='h1' variant="heroPrimary" sx={styles.banner.contentBox}>
+          <Heading as='h6' variant="heroPrimary" sx={styles.banner.contentBox}>
             Our African Wonder
           </Heading>
-          <Button variant="primary">Explore</Button>
-
-        </Box>
-        <Box sx={styles.banner.imageBox}>
-          <Image src={BannerImg} alt='banner' />
+          {/* <Button variant="primary">Explore</Button> */}
+          <Box sx={styles.banner.imageBox}>
+            <Image src={BannerImg} alt='banner' />
+          </Box>
         </Box>
       </Container>
 
@@ -58,7 +57,7 @@ const styles = {
     },
     container: {
       minHeight: 'inherit',
-      display: 'flex',
+      display: 'flex-box',
       flexDirection: 'column',
       justifyContent: 'center',
     },

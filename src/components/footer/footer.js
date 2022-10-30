@@ -3,7 +3,7 @@ import { jsx, Box, Container, Image, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import data from './footer.data';
 import FooterLogo from 'assets/Logo_TMAC_blue.svg';
-// import LogoDark from 'assets/hwb-logo-dark.png';
+
 
 export default function Footer() {
   return (

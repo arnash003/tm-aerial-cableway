@@ -6,7 +6,7 @@ import Layout from 'components/layout';
 import Banner from '../sections/banner';
 import KeyFeature from '../sections/key-feature';
 // import ServiceSection from '../sections/service-section';
-// import Feature from '../sections/feature';
+import Feature from '../sections/feature';
 // import CoreFeature from '../sections/core-feature';
 // import WorkFlow from '../sections/workflow';
 // import Package from '../sections/package';
@@ -27,7 +27,7 @@ export default function IndexPage() {
         <KeyFeature />
         <Pricing />
         {/* <ServiceSection /> */}
-        {/* <Feature /> */}
+        <Feature />
         {/* <CoreFeature /> */}
         {/* <WorkFlow /> */}
         {/* <Package /> */}

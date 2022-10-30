@@ -1,10 +1,22 @@
 /** @jsx jsx */
 import { jsx, Container, Heading, Text, Box, Image } from 'theme-ui';
 import SectionHeader from 'components/section-header';
-// import Rating from 'components/rating';
+import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
 import Avatar1 from 'assets/awards/avatar1.png';
+import Avatar2 from 'assets/awards/avatar2.svg';
+import Avatar3 from 'assets/awards/avatar3.svg';
+import Avatar4 from 'assets/awards/avatar4.jpeg';
+import Avatar5 from 'assets/awards/avatar5.png';
+import Avatar6 from 'assets/awards/avatar6.png';
+import Avatar7 from 'assets/awards/avatar7.jpeg';
+import Avatar8 from 'assets/awards/avatar8.jpeg';
+import Avatar9 from 'assets/awards/avatar9.svg';
+import Avatar10 from 'assets/awards/avatar10.png';
+import Avatar11 from 'assets/awards/avatar11.png';
+import Avatar12 from 'assets/awards/avatar12.png';
+import Avatar13 from 'assets/awards/avatar13.png';
 
 
 const data = [
@@ -22,7 +34,7 @@ const data = [
         title: 'SABS ISO 450001',
         description:
             'Health &Safety Certification',
-        avatar: '',
+        avatar: Avatar1,
         name: 'Health & Safety Certification',
         designation: '',
         review: 5,
@@ -32,8 +44,8 @@ const data = [
         title: 'Africa’s Leading Tourist Attraction',
         description:
             'Africa’s Leading Tourist Attraction',
-        avatar: '',
-        name: 'Table Mountain is named Africa’s Leading Tourist Attraction in the World Travel Awards.',
+        avatar: Avatar9,
+        name: 'Africa’s Leading Tourist Attraction in the World Travel Awards.',
         designation: '',
         review: 5,
     },
@@ -42,7 +54,7 @@ const data = [
         title: 'African Responsible Tourism Awards',
         description:
             'African Responsible Tourism Awards for Best Resource Management',
-        avatar: '',
+        avatar: Avatar2,
         name: '',
         designation: '',
         review: 5,
@@ -51,8 +63,8 @@ const data = [
         id: 5,
         title: 'New 7 Wonder of Nature',
         description:
-            'Table Mountain is an official New 7 Wonder of Nature.',
-        avatar: '',
+            'Official New 7 Wonder of Nature.',
+        avatar: Avatar3,
         name: '',
         designation: '',
         review: 5,
@@ -62,7 +74,7 @@ const data = [
         title: 'TripAdvisors Travellers Choice Awards',
         description:
             'TripAdvisors Certificate of Excellence 2014',
-        avatar: '',
+        avatar: Avatar4,
         name: '',
         designation: '',
         review: 5,
@@ -72,7 +84,7 @@ const data = [
         title: 'Level 1 B-BBEE rating',
         description:
             'Awarded a Level 1 B-BBEE rating',
-        avatar: '',
+        avatar: Avatar5,
         name: '',
         designation: '',
         review: 5,
@@ -82,7 +94,7 @@ const data = [
         title: 'SANParks Cape Regional Achievement',
         description:
             'Business Partner of the Year',
-        avatar: '',
+        avatar: Avatar10,
         name: '',
         designation: '',
         review: 5,
@@ -91,8 +103,8 @@ const data = [
         id: 9,
         title: 'Imvelo Award for Responsible Tourism',
         description:
-            'Best single resource management: Waste management (finalist)',
-        avatar: '',
+            'Best Single Resource Management',
+        avatar: Avatar7,
         name: '',
         designation: '',
         review: 5,
@@ -101,8 +113,8 @@ const data = [
         id: 10,
         title: 'Lilizela Tourism Award 2015',
         description:
-            'Visitor Experience of the Year (provincial winner)',
-        avatar: '',
+            'Visitor Experience of the Year',
+        avatar: Avatar8,
         name: '',
         designation: '',
         review: 5,
@@ -112,7 +124,7 @@ const data = [
         title: 'Cheapflights Travel Award 2016',
         description:
             'Best South African Attraction',
-        avatar: '',
+        avatar: Avatar12,
         name: '',
         designation: '',
         review: 5,
@@ -122,7 +134,7 @@ const data = [
         title: 'Best Tourist Attraction',
         description:
             'The KFM Best of the Cape Awards',
-        avatar: '',
+        avatar: Avatar6,
         name: '',
         designation: '',
         review: 5,
@@ -181,14 +193,14 @@ export default function AwardsAndAccolades() {
             <Container css={{ textAlign: 'center' }}>
                 <SectionHeader
                     slogan="Awards & Accolades"
-                    title="Client Recognition"
+                    title="Certifications of Recognition"
                 />
             </Container>
             <Box sx={styles.carouselWrapper}>
                 <Carousel {...carouselParams}>
                     {data.map((item) => (
                         <Box sx={styles.reviewCard} key={item.sliderClass}>
-                            {/* <Rating rating={item.review} /> */}
+                            <Rating rating={item.review} />
                             <Heading as="h3" sx={styles.title}>
                                 {item.title}
                             </Heading>

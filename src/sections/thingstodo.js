@@ -1,9 +1,11 @@
 /** @jsx jsx */
 import { jsx, Container, Heading, Text, Box, Image } from 'theme-ui';
 import SectionHeader from 'components/section-header';
-// import Rating from 'components/rating';
+import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
+import { Link } from 'react-scroll';
+import Avatar1 from 'assets/ThingsToDo/avatar1.png';
 
 
 const data = [
@@ -11,24 +13,25 @@ const data = [
         id: 1,
         title: 'Tap Cafe',
         description:
-            '',
+            'Quench your Thirst at the Highest Bar in Cape Town',
         name: '',
+        image: Avatar1,
         review: 5,
     },
     {
         id: 2,
         title: 'Shopping',
         description:
-            '',
+            'Purchase souvenirs, gifts and clothing during their visit.',
         name: '',
         designation: '',
         review: 5,
     },
     {
         id: 3,
-        title: 'Media',
+        title: 'Functions & Venue Hire',
         description:
-            '',
+            'Treat your guests or colleagues to a special mountain-top occasion!',
         name: '',
         designation: '',
         review: 5,
@@ -37,16 +40,16 @@ const data = [
         id: 4,
         title: 'Tours & Excursions',
         description:
-            '',
+            'Thirty-minute guided tours happen on the hour from 09:00 to 15:00 daily',
         name: '',
         designation: '',
         review: 5,
     },
     {
         id: 5,
-        title: 'Useful Information',
+        title: 'Class In The Clouds',
         description:
-            '',
+            'An educational experience on top of Table Mountain. ',
         name: '',
         designation: '',
         review: 5,
@@ -113,22 +116,27 @@ export default function ThingsToDo() {
                     {data.map((item) => (
                         <Box sx={styles.reviewCard} key={item.sliderClass}>
                             {/* <Rating rating={item.review} /> */}
+
                             <Heading as="h3" sx={styles.title}>
+
                                 {item.title}
+
                             </Heading>
                             <Text sx={styles.description}>{item.description}</Text>
                             <div className="card-footer">
                                 <div className="image">
-                                    {/* <Image src={item.avatar} alt="Client Image" /> */}
+                                    <Image src={item.avatar} alt="Client Image" />
                                 </div>
                                 <div className="reviewer-info">
                                     <Heading as="h4" sx={styles.heading}>{item.name}</Heading>
+
                                     <Text sx={styles.designation}>
                                         {item.designation}
                                     </Text>
                                 </div>
                             </div>
                         </Box>
+
                     ))}
 
                 </Carousel>
@@ -137,13 +145,14 @@ export default function ThingsToDo() {
     );
 }
 
+
 const styles = {
     carouselWrapper: {
         display: 'flex',
         justifyContent: 'flex-end',
         flexDirection: 'column',
         alignItems: 'flex-end',
-        mt: '-30px',
+        mt: '-90px',
         px: '15px',
         '.carousel-container': {
             width: '100%',
@@ -165,7 +174,7 @@ const styles = {
             '.react-multi-carousel-item--active:nth-of-type(4n)': {
                 opacity: '0.5',
                 '@media screen and (max-width: 1620px)': {
-                    opacity: 1,
+                    opacity: 20,
                 },
             },
         },
