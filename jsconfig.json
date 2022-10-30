@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  }
+}
+
+// sets src as the base directory 
