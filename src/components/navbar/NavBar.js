@@ -2,13 +2,11 @@ import { Link } from 'components/link';
 import React from 'react'
 import { jsx, Container, Flex, Button } from 'theme-ui';
 import menuItems from './navbar.data';
-// import Logo from 'components/logo';
-// import LogoDark from 'assets/Logo-7Wonders.svg';
+
 
 const NavBar = () => {
     return (
         <Container sx={styles.NavBar}>
-            {/* <Logo src={LogoDark} /> */}
             <Flex as="nav" sx={styles.nav}>
                 {menuItems.map((menuItem, i) => (
                     <Link

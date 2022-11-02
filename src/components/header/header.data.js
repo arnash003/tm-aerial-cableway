@@ -1,26 +1,26 @@
 export default [
   {
-    path: '',
+    path: '/about-us',
     label: 'About Us',
   },
   {
-    path: '',
+    path: '/things-to-do',
     label: 'Things To Do',
   },
   {
-    path: '',
+    path: '/visitor-info',
     label: 'Visitor Info',
   },
   {
-    path: '',
+    path: '/social-media',
     label: '#',
   },
   {
-    path: '',
+    path: '/news-letter',
     label: 'Newsletter',
   },
   {
-    path: '',
+    path: '/food-and-drink',
     label: 'Food & Drink',
   },
 ];

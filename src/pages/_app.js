@@ -4,5 +4,7 @@ import 'rc-drawer/assets/index.css';
 import 'typeface-dm-sans';
 
 export default function CustomApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  const getLayout = Component.getLayout || ((page) => page)
+  return getLayout(<Component {...pageProps} />)
+
 }
